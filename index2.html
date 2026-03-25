@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Monthly Expense Tracker</h1>
+
+        <div class="inputs">
+            <div class="field">
+                <label>Month</label>
+                <select id="month">
+                    <option>September</option>
+                    <option>October</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Year</label>
+                <select id="year">
+                    <option>2024</option>
+                    <option>2025</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Category</label>
+                <select id="category">
+                    <option value="housing">Housing</option>
+                    <option value="food">Food</option>
+                    <option value="transport">Transportation</option>
+                    <option value="bills">Bills</option>
+                    <option value="misc">Miscellaneous</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Amount</label>
+                <input type="number" id="amount" placeholder="">
+            </div>
+        </div>
+
+        <button onclick="addExpense()">Add Expense</button>
+
+        <div class="legend">
+            <div class="item"><span class="box pink"></span> Housing</div>
+            <div class="item"><span class="box green"></span> Food</div>
+            <div class="item"><span class="box yellow"></span> Transportation</div>
+            <div class="item"><span class="box blue"></span> Bills</div>
+            <div class="item"><span class="box orange"></span> Miscellaneous</div>
+        </div>
+
+        <div class="chart-box">
+            <div class="donut" id="chart"></div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
